@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c2b26">
+  <title>OPS STATUS | Depot Intelligence</title>
+  <meta name="description" content="A decision-first operations summary for depot leadership, workforce readiness, safety and case management.">
+  <meta property="og:title" content="OPS STATUS | Depot Intelligence">
+  <meta property="og:description" content="Faster decisions. Clearer operations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ops-status.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OPS STATUS | Depot Intelligence">
+  <meta name="twitter:description" content="Every critical move. One clear view.">
+  <meta name="twitter:image" content="https://ops-status.github.io/og.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to dashboard</a>
+
+  <aside class="side-rail" aria-label="Primary navigation">
+    <a class="brand-mark" href="#overview" aria-label="OPS STATUS home">OS</a>
+    <nav>
+      <button class="rail-button active" data-target="overview" aria-label="Overview"><span>01</span></button>
+      <button class="rail-button" data-target="workforce" aria-label="Workforce"><span>02</span></button>
+      <button class="rail-button" data-target="safety" aria-label="Safety"><span>03</span></button>
+      <button class="rail-button" data-target="investigations" aria-label="Investigations"><span>04</span></button>
+    </nav>
+    <div class="rail-spacer"></div>
+    <button class="avatar" aria-label="Operations Admin profile">OP.Admin</button>
+  </aside>
+
+  <main class="workspace" id="main-content">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <span class="brand-name">OPS STATUS</span>
+      </div>
+      <div class="topbar-actions">
+        <div class="date-control">
+          <button class="date-chip" id="dateButton" aria-expanded="false" aria-controls="dateMenu">
+            <span id="selectedDate">04 Aug 2026</span><small>Daily summary</small><b>⌄</b>
+          </button>
+          <div class="date-menu" id="dateMenu" hidden>
+            <button data-date="04 Aug 2026">04 Aug 2026 <span>Current report</span></button>
+            <button data-date="03 Aug 2026">03 Aug 2026 <span>Previous day</span></button>
+            <button data-date="02 Aug 2026">02 Aug 2026 <span>Previous day</span></button>
+          </div>
+        </div>
+        <button class="export-button" id="exportButton"><span>Export brief</span><b>↗</b></button>
+      </div>
+    </header>
+
+    <section class="overview" id="overview">
+      <div class="overview-copy">
+        <div class="status-line"><span class="live-dot"></span>Operations stable · refreshed 14:17</div>
+        <h1>One clear view<br><em>Every critical move</em></h1>
+        <div class="brief-chips" aria-label="Leadership brief">
+          <span><b>✓</b> 580 cleared fit for duty</span>
+          <span><b>!</b> 2 driver affairs cases pending</span>
+        </div>
+      </div>
+
+      <article class="readiness-card">
+        <div class="readiness-head">
+          <div><span class="section-kicker">ACTIVE DRIVERS</span><strong>87.3%</strong></div>
+          <span class="trend">↑ 1.8%</span>
+        </div>
+        <div class="meter" aria-label="Workforce readiness 87.3 percent"><span class="meter-fill"></span></div>
+        <div class="readiness-foot"><span><b>696</b> active</span><span>of 797 total drivers</span></div>
+        <div class="readiness-note"><span>Coverage confidence</span><b>High</b></div>
+      </article>
+    </section>
+
+    <section class="kpi-grid" aria-label="Key performance indicators">
+      <article class="kpi-card mint"><div class="kpi-top"><span>STD - DO</span><span class="mini-mark">↗</span></div><strong>25</strong><small>Drivers on STD - DO</small></article>
+      <article class="kpi-card blue"><div class="kpi-top"><span>Standby</span><span class="mini-mark">+</span></div><strong>45</strong><small>Available for assignment</small></article>
+      <article class="kpi-card lime"><div class="kpi-top"><span>Stage 7</span><span class="mini-mark">✓</span></div><strong>776</strong><small>97.4% coverage</small></article>
+      <article class="kpi-card sand"><div class="kpi-top"><span>On vacation</span><span class="mini-mark">○</span></div><strong>66</strong><small>8.3% of total force</small></article>
+      <article class="kpi-card coral"><div class="kpi-top"><span>DW drivers</span><span class="mini-mark">!</span></div><strong>15</strong><small>Requires daily review</small></article>
+      <article class="kpi-card stone"><div class="kpi-top"><span>Suspended</span><span class="mini-mark">–</span></div><strong>8</strong><small>1.0% of total force</small></article>
+    </section>
+
+    <section class="section-block" id="workforce">
+      <div class="section-heading">
+        <div><span class="section-kicker">WORKFORCE CONTROL</span><h2>Attendance and fitness</h2></div>
+      </div>
+
+      <div class="workforce-grid">
+        <article class="panel attendance-panel">
+          <div class="panel-head"><div><span class="section-kicker">DUTIES & ABSENCE</span><h3>551 planned duties</h3></div><span class="good-pill">On plan</span></div>
+          <div class="absence-visual">
+            <div class="planned-track"><span></span><b>100%</b></div>
+            <div class="absence-row"><span>Total absence</span><div><i style="width:58%"></i></div><strong>32</strong></div>
+            <div class="absence-row actual"><span>Actual absence</span><div><i style="width:27%"></i></div><strong>15</strong></div>
+          </div>
+          <div class="impact-strip"><span>Actual absence rate</span><strong>2.7%</strong><small>17 below total recorded absence</small></div>
+        </article>
+
+        <article class="panel composition-panel">
+          <div class="panel-head"><div><span class="section-kicker">WORKFORCE MIX</span><h3>797 total drivers</h3></div><button class="ghost-button" data-open="workforce">View detail</button></div>
+          <div class="donut-wrap">
+            <div class="donut" role="img" aria-label="696 active, 45 standby, 66 on vacation, and remaining exceptions"><span><b>87%</b><small>active</small></span></div>
+            <ul class="legend-list">
+              <li><span class="dot green"></span><b>696</b> Active</li>
+              <li><span class="dot blue"></span><b>45</b> Standby</li>
+              <li><span class="dot tan"></span><b>66</b> Vacation</li>
+              <li><span class="dot red"></span><b>23</b> DW / suspended</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="panel fitness-panel">
+          <span class="section-kicker">FITNESS OUTCOME</span>
+          <div class="fitness-score"><strong>580</strong><span>Fit for duty</span></div>
+          <div class="fitness-ring"><span>100%</span></div>
+          <p>No unfit drivers recorded in this report.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block safety-section" id="safety">
+      <div class="section-heading light">
+        <div><span class="section-kicker">SAFETY & CASE DESK</span><h2>Focus on the exceptions</h2></div>
+        <p>One event, no driver fault, and two cases awaiting closure.</p>
+      </div>
+
+      <div class="safety-grid">
+        <article class="incident-card">
+          <div class="incident-top"><span class="event-count">01</span><span class="status-pill safe">Not guilty</span></div>
+          <h3>Single recorded accident</h3>
+          <p>No guilty accidents were recorded in the daily summary.</p>
+          <div class="incident-tags"><span>Type <b>B</b></span><span>Route <b>2</b></span><span>Bus <b>MA</b></span></div>
+          <button class="detail-button" data-open="incident">Open event brief <span>↗</span></button>
+        </article>
+
+        <article class="case-card">
+          <div class="panel-head"><div><span class="section-kicker">DRIVER AFFAIRS</span><h3>Case flow</h3></div><strong>8 total</strong></div>
+          <div class="case-split"><span style="width:75%"></span><i style="width:25%"></i></div>
+          <div class="case-values"><div><b>6</b><span>Closed</span></div><div><b>2</b><span>Pending</span></div></div>
+          <div class="sla-line"><span>Closure rate</span><b>75%</b></div>
+        </article>
+
+        <article class="queue-card">
+          <div class="queue-head">
+            <div><span class="section-kicker">ACTION QUEUE</span><h3>Items requiring attention</h3></div>
+            <div class="filter-group" aria-label="Filter action queue">
+              <button class="filter-chip active" data-filter="all">All</button>
+              <button class="filter-chip" data-filter="pending">Pending</button>
+              <button class="filter-chip" data-filter="monitoring">Monitoring</button>
+            </div>
+          </div>
+          <div class="queue-list">
+            <button class="queue-row" data-status="pending" data-open="case-01"><span class="priority high">P1</span><span><b>Driver affairs review</b><small>2 investigations awaiting supervisor decision</small></span><em>Pending</em><strong>↗</strong></button>
+            <button class="queue-row" data-status="monitoring" data-open="case-02"><span class="priority medium">P2</span><span><b>DW roster validation</b><small>Confirm the 15-driver daily status list</small></span><em>Monitoring</em><strong>↗</strong></button>
+            <button class="queue-row" data-status="monitoring" data-open="case-03"><span class="priority low">P3</span><span><b>Route 2 safety watch</b><small>Retain event for pattern monitoring</small></span><em>Monitoring</em><strong>↗</strong></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block investigation-section" id="investigations">
+      <div class="section-heading">
+        <div><span class="section-kicker">INVESTIGATIONS</span><h2>Every case, one clear path</h2></div>
+        <p>Track ownership, evidence and decisions from first review through closure.</p>
+      </div>
+
+      <div class="investigation-grid">
+        <article class="investigation-summary">
+          <div class="investigation-summary-top">
+            <div><span class="section-kicker">CASE HEALTH</span><h3>8 investigations</h3></div>
+            <span class="status-pill active-case">2 active</span>
+          </div>
+          <div class="investigation-progress" aria-label="Six of eight investigations closed"><span></span></div>
+          <div class="investigation-counts">
+            <div><strong>6</strong><span>Closed</span></div>
+            <div><strong>1</strong><span>Evidence review</span></div>
+            <div><strong>1</strong><span>Decision pending</span></div>
+          </div>
+          <div class="investigation-rate"><span>Closure rate</span><strong>75%</strong></div>
+        </article>
+
+        <article class="investigation-register">
+          <div class="register-head">
+            <div><span class="section-kicker">ACTIVE REGISTER</span><h3>Open investigations</h3></div>
+            <span>Updated 14:17</span>
+          </div>
+          <div class="register-columns" aria-hidden="true"><span>Case</span><span>Stage</span><span>Owner</span><span>Target</span><span></span></div>
+          <button class="register-row" data-open="investigation-01">
+            <span><b>INV-01</b><small>Driver affairs review</small></span>
+            <em class="stage-chip review">Evidence review</em>
+            <span>Operations Admin</span><time datetime="2026-08-05">05 Aug</time><strong>↗</strong>
+          </button>
+          <button class="register-row" data-open="investigation-02">
+            <span><b>INV-02</b><small>Service case follow-up</small></span>
+            <em class="stage-chip decision">Decision pending</em>
+            <span>Operations Admin</span><time datetime="2026-08-05">05 Aug</time><strong>↗</strong>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div><span class="brand-mark small">OS</span><p><b>OPS STATUS</b></p></div>
+      <p>Prepared by <b>Operations Admin</b></p>
+    </footer>
+  </main>
+
+  <div class="modal" id="detailModal" hidden>
+    <button class="modal-backdrop" aria-label="Close details"></button>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close details">×</button>
+      <span class="section-kicker" id="modalKicker">DETAIL</span>
+      <h2 id="modalTitle">Item detail</h2>
+      <p id="modalText"></p>
+      <div class="modal-insight" id="modalInsight"></div>
+      <button class="modal-action">Mark as reviewed <span>✓</span></button>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>

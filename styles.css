@@ -80,3 +80,15 @@
   .modal-action span{color:#0b2e27}
   .toast{background:var(--lime);color:#0b2e27}
 }
+
+@media screen{
+  #overview,#workforce{position:relative;isolation:isolate;overflow:hidden;background:#071511}
+  #overview::before,#workforce::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(7,21,17,.18),rgba(7,21,17,.18)),url("https://pbs.twimg.com/media/FWvDMeQX0AUXYWj.jpg");background-size:cover;background-position:center 46%;background-repeat:no-repeat;opacity:.12;filter:saturate(.55) contrast(1.08);transform:scale(1.015)}
+  #overview::after,#workforce::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(7,21,17,.72),rgba(7,21,17,.56) 48%,rgba(7,21,17,.82))}
+  #overview>*,#workforce>*{position:relative;z-index:2}
+}
+
+@media screen and (max-width:820px){
+  #overview::before,#workforce::before{background-position:55% center;opacity:.1}
+  #overview::after,#workforce::after{background:rgba(7,21,17,.7)}
+}

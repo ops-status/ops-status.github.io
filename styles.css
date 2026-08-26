@@ -138,3 +138,28 @@
   .header-symbol{flex-basis:58px;width:58px;height:46px;background-size:708px 167px;background-position:-17px -14px}
   .topbar .header-brand .brand-name{display:none}
 }
+
+/* Full-site Makkah route map backdrop. */
+@media screen{
+  body{
+    background-color:#070b17;
+    background-image:linear-gradient(rgba(7,11,23,.90),rgba(7,11,23,.90)),url("https://pbs.twimg.com/media/FWvDMeQX0AUXYWj.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+  }
+  .workspace{
+    background-color:transparent;
+    background-image:radial-gradient(circle at 8% 0,rgba(232,90,215,.12),transparent 31rem),radial-gradient(circle at 88% 18%,rgba(127,104,237,.12),transparent 27rem);
+  }
+  #overview,#workforce{background:transparent}
+  #overview::before,#workforce::before,#overview::after,#workforce::after{display:none}
+  .safety-section{background:rgba(8,13,27,.76)}
+  .investigation-section{background:rgba(9,14,29,.76)}
+  footer{background:rgba(7,11,23,.84)}
+}
+
+@media screen and (max-width:820px){
+  body{background-attachment:scroll;background-position:center top}
+}

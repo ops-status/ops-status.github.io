@@ -168,3 +168,5 @@
 h1 em{color:#62a88d}
 .status-line{color:#f08de6}
 .live-dot{background:#e75ad7;box-shadow:0 0 0 5px rgba(231,90,215,.15)}
+.fitness-score strong{color:#62a88d}
+.side-rail>.brand-mark{font-size:8px;letter-spacing:-.03em;white-space:nowrap}
